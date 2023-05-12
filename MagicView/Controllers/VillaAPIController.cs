@@ -13,10 +13,12 @@ namespace MagicView.Controllers
         {
             return Ok((VillaStore.villaList));
         }
+
         [HttpGet("{id:int}", Name ="GetVilla")]
         [ProducesResponseType(StatusCodes.Status200OK)]
-        [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        /*Please check your code here*/
+/*        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]*/
 
         public ActionResult<VillaDto> GetVillas(int id)
         {
